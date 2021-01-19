@@ -22,7 +22,7 @@ jobs:
        go version
        go get -u "github.com/elastic/go-elasticsearch"
        go get -u "github.com/fsnotify/fsnotify"
-       got get -u "github.com/spf13/viper"
+       go get -u "github.com/spf13/viper"
     - name: Build
       run: go build -v ./...
 

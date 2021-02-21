@@ -1,14 +1,10 @@
 package main
 
 import (
-	"./common/elasticbench"
+	//"fmt"
+	"./internal/benchmarkutils"
 )
 
 func main() {
-	elasticbench.Generate()
-	elasticbench.Index()
-	elasticbench.SearchAll()
-	elasticbench.GetBench()
-	elasticbench.UpdateBench()
-	elasticbench.DeleteBench()
+	benchmarkutils.CmdParse()
 }
